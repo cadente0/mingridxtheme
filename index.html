@@ -43,6 +43,7 @@
             font-size: 18px;
             cursor: pointer;
             padding: 0 10px;
+            margin-right: 0px;
         }
         .grid {
             display: grid;
@@ -63,6 +64,9 @@
             gap: 10px;
             margin-top: 10px;
             font-size: 0.8em;
+        }
+        .post-date {
+            margin-right: 10px;
         }
         a {
             color: blue;
@@ -114,7 +118,7 @@
     <header>
         <span class="dark-mode-toggle" onclick="toggleDarkMode()">☼</span>
         <h1><a href="/">{Title}</a></h1>
-        <a href="/random" class="random-post">⚠</a>
+        <a href="/random" class="random-post">⁑</a>
     </header>
 
     <main class="grid">
@@ -180,6 +184,7 @@
                 {/block:Video}
 
                 <div class="post-info">
+                    <span class="post-date">{Date}</span>
                     <a href="{Permalink}">↪</a>
                     <a href="{ReblogURL}">↺</a>
                     <a href="{LikeURL}">♥</a>
